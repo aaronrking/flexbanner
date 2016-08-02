@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* Custom style for Flex Learning Banner Area */
+
+/* Remove this body bg image before uploading to T4 */
+body {
+	background: url("/images/uf-bg-texture.png") repeat scroll 0 0;
+}
+
+#banner {
+	height: 500px;
+	background: url("/images/FoggyMorning-3.jpg") top center no-repeat;
+	background-size: cover;
+	margin-bottom: 25px;
+}
+
+#banner_caption {
+	width: 450px;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.flexbox {
+	display: flex;
+}
+
+.flex-flow {
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.headflush {
+	margin: 0;
+	padding: 0;
+}
+
+.dark {
+	background-color: rgba(0,0,0,.6);
+}
+
+.light {
+	color: #6B99C3;
+}
+
+.banner_caption_ul {
+	margin: 5px 0 10px;
+	height: auto;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.white, .white a {
+	color: white;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.flow li {
+	margin-right: 5px;
+}
+
+.button li {
+	padding: 4px 0;
+	background-color: rgba(226,143,65,0.7);
+	border-radius: 5px;
+	font-size: 12px;
+	-webkit-transition: background-color 0.5s ease-out;
+  	-moz-transition: background-color 0.5s ease-out;
+  	-o-transition: background-color 0.5s ease-out;
+  	transition: background-color 0.5s ease-out;
+}
+
+.button li:hover {
+	background-color: #E28F41;
+}
+
+.button a {
+	padding: 2px 10px;
+}
+
+.banner_caption_ul li::before, .banner_caption_ul li::before {
+    content: none;
+}
+
+.banner_caption_btn {
+	border-color: #E28F41;
+	background-color: transparent;
+	color: white;
+	-webkit-transition: background-color 0.5s ease-out;
+  	-moz-transition: background-color 0.5s ease-out;
+  	-o-transition: background-color 0.5s ease-out;
+  	transition: background-color 0.5s ease-out;
+}
+
+.banner_caption_btn:hover {
+	background-color: rgba(226,143,65,0.7);
+}
