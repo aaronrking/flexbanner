@@ -96,3 +96,36 @@ body {
 .banner_caption_btn:hover {
 	background-color: rgba(226,143,65,0.7);
 }
+
+@media screen and (max-width:991px){
+	#banner {
+		height: 400px;
+	}
+}
+
+
+
+@media screen and (max-width:649px){
+	#banner {
+		height: 300px;
+	}
+	#banner_caption {
+		max-width: 400px;
+	}
+	#banner_caption h3 {
+		font-size: 1.25em;
+	}
+	.banner_caption_ul:nth-last-of-type(1) {
+		border-bottom: 0;
+	}
+	.button li {
+		padding: 2px 0;
+		font-size: 11px;
+	}
+	.button a {
+		padding: 2px 5px;
+	}
+	.banner_caption_btn {
+		display: none;
+	}
+}
