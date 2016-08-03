@@ -101,6 +101,59 @@ body {
 	background-color: rgba(226,143,65,0.7);
 }
 
+/* ----- Banner Accordion ----- */
+
+.banner_accordion, .banner_accordion * {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+.banner_accordion {
+	overflow: hidden;
+	margin-top: 10px;
+	box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+    border-radius:3px;
+}
+
+/*----- Section Titles -----*/
+.banner_accordion_section-title {
+    width:100%;
+    padding:10px;
+    display:inline-block;
+    border-bottom:1px solid #6088ad;
+    background:#6C9AC3;
+    transition:all linear 0.15s;
+    /* Type */
+    font-size:1.2em;
+	font-family: "quadon","Helvetica Neue",Helvetica,Arial,sans-serif;
+	letter-spacing: 1px;
+    text-shadow:0px 1px 0px #1a1a1a;
+    color:#fff;
+}
+
+.banner_accordion_section-title.active, .banner_accordion_section-title:hover {
+    background:#7ca5c9;
+    /* Type */
+    text-decoration:none;
+	color: #fff;
+}
+
+.banner_accordion_section:last-child .banner_accordion_section-title {
+    border-bottom:none;
+}
+
+.banner_accordion_section-content {
+    padding:10px 10px 0;
+    display:none;
+}
+
+#accordion1.banner_accordion_section-content {
+    display:block;
+}
+
+/* ----- Media Queries ----- */
+
 @media screen and (max-width:991px){
 	#banner {
 		height: 400px;
@@ -141,3 +194,15 @@ body {
 	}
 }
 
+
+@media screen and (max-width:399px){
+	#banner_caption {
+		display: none;
+	}
+}
+
+@media screen and (min-width:400px){
+	.banner_accordion {
+		display: none;
+	}
+}
